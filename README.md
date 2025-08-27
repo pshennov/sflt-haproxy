@@ -116,6 +116,9 @@ curl -H 'Host:example.local' http://127.0.0.1:8088
 ```
 ![Результат](https://github.com/pshennov/sflt-haproxy/blob/main/zadanie2.png)
 
+* `Проверяю без использования домена example.local`
+![Результат](https://github.com/pshennov/sflt-haproxy/blob/main/error.png)
+
 * `Дополнительно проверяю статистику`
 ![Статистика](https://github.com/pshennov/sflt-haproxy/blob/main/stat2.png)
 
