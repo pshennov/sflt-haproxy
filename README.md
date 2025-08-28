@@ -52,18 +52,18 @@ backend web_servers
         server s1 127.0.0.1:8888 check
         server s2 127.0.0.1:9999 check
 ```
-![Конфигурация](https://github.com/pshennov/images/blob/main/conf1.png)
-[Файл](https://github.com/pshennov/sflt-haproxy/blob/main/haproxy1.cfg)
+![Конфигурация](https://github.com/pshennov/sflt-haproxy/blob/main/images/conf1.png)
+[Файл](https://github.com/pshennov/sflt-haproxy/blob/main/file/haproxy1.cfg)
 
 * `Перезапускаю HAproxy, проверяю результат`
 ```
 sudo systemctl reload haproxy
 curl http://127.0.0.1:8088
 ```
-![Результат](https://github.com/pshennov/images/blob/main/zadanie1.png)
+![Результат](https://github.com/pshennov/sflt-haproxy/blob/main/images/zadanie1.png)
 
 * `Дополнительно проверяю статистику`
-![Статистика](https://github.com/pshennov/images/blob/main/stat1.png)
+![Статистика](https://github.com/pshennov/sflt-haproxy/blob/main/images/stat1.png)
 
 ## Задание 2
 `Запустите три simple python сервера на своей виртуальной машине на разных портах`
@@ -107,20 +107,20 @@ backend web_servers
         server s3 127.0.0.1:7777 check weight 4
 ```
 
-![Конфигурация](https://github.com/pshennov/images/blob/main/conf2.png)
-[Файл](https://github.com/pshennov/sflt-haproxy/blob/main/haproxy.cfg)
+![Конфигурация](https://github.com/pshennov/sflt-haproxy/blob/main/images/conf2.png)
+[Файл](https://github.com/pshennov/sflt-haproxy/blob/main/file/haproxy.cfg)
 
 * `Перезапускаю HAproxy, проверяю результат`
 ```
 sudo systemctl reload haproxy
 curl -H 'Host:example.local' http://127.0.0.1:8088
 ```
-![Результат](https://github.com/pshennov/images/blob/main/zadanie2.png)
+![Результат](https://github.com/pshennov/sflt-haproxy/blob/main/images/zadanie2.png)
 
 * `Проверяю без использования домена example.local`
-![Результат](https://github.com/pshennov/images/blob/main/error.png)
+![Результат](https://github.com/pshennov/sflt-haproxy/blob/main/images/error.png)
 
 * `Дополнительно проверяю статистику`
-![Статистика](https://github.com/pshennov/images/blob/main/stat2.png)
+![Статистика](https://github.com/pshennov/sflt-haproxy/blob/main/images/stat2.png)
 
 ---
